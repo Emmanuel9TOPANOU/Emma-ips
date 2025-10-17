@@ -43,151 +43,152 @@
 
     <main class="pt-1">
 
-        <section class="relative h-screen flex items-center justify-center text-center overflow-hidden mt-24">
-            <img src="src/assets/images/IMG_IPS_04.jpeg" alt="Enfants souriants"
-                class="absolute inset-0 w-full h-full object-cover">
+      <section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden mt-24">
 
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60  to-black/59"></div>
-            <div class="relative z-10 text-white max-w-4xl px-4">
-                <h2 class="text-3xl md:text-4xl font-lora font-semibold mb-4 animate-fade-in-up"
-                    style="animation-delay: 0.2s;">
-                    Contacts
-                </h2>
+    <img src="src/assets/images/IMG_IPS_04.jpeg" alt="Enfants souriants"
+        class="absolute inset-0 w-full h-full object-cover zoom-in-animation">
 
-                <h5 class="text-x md:text-xl font-lora animate-fade-in-up" style="animation-delay: 0.4s;">
-                    <a href="index.html">Accueil /</a> <a href="contact.html"><span
-                            style="color: #FFD700;">Contacts</span></a>
-                </h5>
-            </div>
-        </section>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/59 opacity-0 fade-in-animation delay-1"></div>
+    
+    <div class="relative z-10 text-white max-w-4xl px-4">
+        
+        <h2 class="text-3xl md:text-4xl font-lora font-semibold mb-4 
+                   fade-up-animation delay-2">
+            Contacts
+        </h2>
+
+        <h5 class="text-x md:text-xl font-lora 
+                  fade-up-animation delay-3">
+            <a href="index.html">Accueil /</a> <a href="contact.html"><span
+                    style="color: #FFD700;">Contacts</span></a>
+        </h5>
+    </div>
+</section>
 
 
-        <section class="py-12 md:py-16 bg-white">
-            <div class="mx-auto px-4 sm:px-6 lg:px-8">
+       <section class="py-12 md:py-16 bg-white">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 p-6 border-blue-200 rounded-xl shadow-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 p-6 border-blue-200 rounded-xl shadow-lg
+                    start-hidden animate-fade-in"> <div class="space-y-6 pt-8 pb-8 
+                        start-hidden animate-slide-in-left delay-1"> <p class="text-lg text-black leading-relaxed mb-6">
+                    Vous souhaitez en savoir plus sur nos programmes, collaborer avec l'Institut pour le Progrès
+                    Social ou simplement poser une question ? Remplissez le formulaire ci-dessous ou
+                    contactez-nous directement via nos coordonnées.
+                </p>
 
-                    <div class="space-y-6 pt-8 pb-8">
-
-                        <p class="text-lg text-black leading-relaxed mb-6">
-                            Vous souhaitez en savoir plus sur nos programmes, collaborer avec l'Institut pour le Progrès
-                            Social ou simplement poser une question ? Remplissez le formulaire ci-dessous ou
-                            contactez-nous directement via nos coordonnées.
-                        </p>
-
-                        <form action="#" method="POST" class="space-y-6">
-                            <div>
-                                <label for="full-name" class="block text-sm font-medium text-gray-700">
-                                    Nom et Prénoms
-                                </label>
-                                <input type="text" id="full-name" name="full-name"
-                                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-amber-500 focus:ring-green-500 text-gray-900 p-5"
-                                    placeholder="" required>
-                            </div>
-
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700">
-                                    Email
-                                </label>
-                                <input type="email" id="email" name="email"
-                                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-gray-900 p-5"
-                                    placeholder="" required>
-                            </div>
-
-                            <div>
-                                <label for="subject" class="block text-sm font-medium text-gray-700">
-                                    Objet du message
-                                </label>
-                                <input type="text" id="subject" name="subject"
-                                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-gray-900 p-5"
-                                    placeholder="" required>
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700">
-                                    Message
-                                </label>
-                                <textarea id="message" name="message" rows="4"
-                                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-gray-900 p-2"
-                                    placeholder="Écrivez votre message ici" required></textarea>
-                            </div>
-
-                            <div>
-                                <button type="submit"
-                                    class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-lime-600 hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-150 w-fit">
-                                    Envoyer
-                                </button>
-                            </div>
-                        </form>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700">
+                            Nom et Prénoms
+                        </label>
+                        <input type="text" id="full-name" name="full-name"
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-amber-500 focus:ring-green-500 text-gray-900 p-5"
+                            placeholder="" required>
                     </div>
 
-                    <div class="space-y-6">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email"
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-gray-900 p-5"
+                            placeholder="" required>
+                    </div>
 
-                        <div class="h-[500px]">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1584520964275!2d2.447687374044975!3d6.3735351748898665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023553a76da255d%3A0xb18cac540aeaeef2!2sFifatin%2C%20Cotonou!5e0!3m2!1sfr!2sbj!4v1759825493567!5m2!1sfr!2sbj"
-                                style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" class="w-full h-full rounded-md shadow-md">
-                            </iframe>
-                        </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700">
+                            Objet du message
+                        </label>
+                        <input type="text" id="subject" name="subject"
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-gray-900 p-5"
+                            placeholder="" required>
+                    </div>
 
-                        <div class="space-y-3 pt-4">
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">
+                            Message
+                        </label>
+                        <textarea id="message" name="message" rows="4"
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-gray-900 p-2"
+                            placeholder="Écrivez votre message ici" required></textarea>
+                    </div>
 
-                            <div class="flex items-start space-x-3 text-sm text-gray-700">
-                                <span class="text-lime-600 flex-shrink-0 mt-1">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                        </path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                    </svg>
-                                </span>
-                                <p>
-                                    Cotonou, Commune de Cotonou, Département du Littoral <br>
-                                    Quartier Fifatin, derrière la maison du peuple d'Akpakpa<br>
-                                    : 05 BP 9103 - Bénin
-                                </p>
-                            </div>
+                    <div>
+                        <button type="submit"
+                            class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-lime-600 hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-150 w-fit">
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+            </div>
 
-                            <div class="flex items-start space-x-3 text-sm text-gray-700">
-                                <span class="text-lime-600 flex-shrink-0 mt-1">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.129a11.042 11.042 0 005.516 5.516l1.129-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.717 21 3 14.283 3 6V5z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <p>
-                                    : (+229) 01 97 57 1703<br>
-                                    : (+229) 01 97 68 1885
-                                </p>
-                            </div>
+            <div class="space-y-6 
+                        start-hidden animate-slide-in-right delay-2"> <div class="h-[500px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1584520964275!2d2.447687374044975!3d6.3735351748898665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023553a76da255d%3A0xb18cac540aeaeef2!2sFifatin%2C%20Cotonou!5e0!3m2!1sfr!2sbj!4v1759825493567!5m2!1sfr!2sbj"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-full h-full rounded-md shadow-md">
+                    </iframe>
+                </div>
 
-                            <div class="flex items-start space-x-3 text-sm text-gray-700">
-                                <span class="text-lime-600 flex-shrink-0 mt-1">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <p>
-                                    <a href="mailto:sprogresswatch@gmail.com"
-                                        class="text-lime-600 hover:underline">sprogresswatch@gmail.com</a>
-                                </p>
-                            </div>
+                <div class="space-y-3 pt-4">
 
-                        </div>
+                    <div class="flex items-start space-x-3 text-sm text-gray-700 start-hidden animate-fade-up delay-3">
+                        <span class="text-lime-600 flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </span>
+                        <p>
+                            Cotonou, Commune de Cotonou, Département du Littoral <br>
+                            Quartier Fifatin, derrière la maison du peuple d'Akpakpa<br>
+                            : 05 BP 9103 - Bénin
+                        </p>
+                    </div>
+
+                    <div class="flex items-start space-x-3 text-sm text-gray-700 start-hidden animate-fade-up delay-4">
+                        <span class="text-lime-600 flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.129a11.042 11.042 0 005.516 5.516l1.129-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.717 21 3 14.283 3 6V5z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p>
+                            : (+229) 01 97 57 1703<br>
+                            : (+229) 01 97 68 1885
+                        </p>
+                    </div>
+
+                    <div class="flex items-start space-x-3 text-sm text-gray-700 start-hidden animate-fade-up delay-5">
+                        <span class="text-lime-600 flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p>
+                            <a href="mailto:sprogresswatch@gmail.com"
+                                class="text-lime-600 hover:underline">sprogresswatch@gmail.com</a>
+                        </p>
                     </div>
 
                 </div>
-
             </div>
-        </section>
+
+        </div>
+
+    </div>
+</section>
 
     </main>
 
@@ -374,6 +375,58 @@
             window.addEventListener('scroll', toggleHeaderBlur);
             toggleHeaderBlur();
         });
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+    // 1. Définir les options de l'observateur
+    // rootMargin: '0px' - La zone d'affichage est le viewport.
+    // threshold: 0.1 - Déclenchement quand 10% de l'élément est visible.
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px', 
+        threshold: 0.1 
+    };
+
+    // 2. Définir la fonction de rappel (callback)
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            // Si l'élément est dans la zone visible
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                
+                // Récupérer la classe d'animation spécifique (e.g., animate-slide-in-left)
+                const animationClasses = Array.from(target.classList).filter(
+                    className => className.startsWith('animate-')
+                );
+
+                // Ajouter les classes d'animation
+                target.classList.remove('start-hidden');
+                target.classList.add(...animationClasses);
+
+                // Arrêter d'observer cet élément
+                observer.unobserve(target);
+            }
+        });
+    };
+
+    // 3. Créer l'observateur
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // 4. Cibler tous les éléments à observer
+    const hiddenElements = document.querySelectorAll('.start-hidden');
+    hiddenElements.forEach(element => {
+        observer.observe(element);
+    });
+});
     </script>
 </body>
 
