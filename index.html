@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Institut pour le Progès Social IPS</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RMOeK3vjW6Z+089+7/Qe78yA+6w4L/8c6Lp0uP0p+wFmK5K2eN+P5/F4e1qD1Dqj8mQ="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header id="blurHeader"
+        class="flex items-center justify-between p-4 fixed top-0 w-full z-50 transition-all duration-300 bg-gray-50 border-b border-gray-200">
+        <div class="logo flex items-center">
+            <img src="src/assets/images/logo.png" alt="Logo IPS" class="h-14 md:h-18 w-auto" />
+        </div>
+
+        <button id="menuBtn" class="md:hidden flex flex-col space-y-1 focus:outline-none">
+            <span class="block w-6 h-0.5 bg-black"></span>
+            <span class="block w-6 h-0.5 bg-black"></span>
+            <span class="block w-6 h-0.5 bg-black"></span>
+        </button>
+
+        <nav id="navMenu"
+            class="hidden md:flex items-center gap-8 md:gap-15 absolute md:static top-20 left-0 w-full md:w-auto bg-gray-50 md:bg-transparent flex-col md:flex-row md:space-y-0 space-y-6 py-6 md:py-0 shadow-md md:shadow-none">
+            <ul class="flex flex-col md:flex-row items-center gap-6 md:gap-8 text-black font-semibold">
+                <li><a href="index.html" class="font-lora active-link hover:text-lime-700">Accueil</a></li>
+                <li><a href="a-propos.html" class="font-lora hover:text-lime-700">A Propos</a></li>
+                <li><a href="nos-projets.html" class="font-lora hover:text-lime-700">Nos Projets</a></li>
+                <li><a href="blog.html" class="font-lora hover:text-lime-700">Blog</a></li>
+                <li><a href="contact.html" class=" font-lora hover:text-lime-700">Contact</a></li>
+            </ul>
+
+            <a href="Don.html"><button
+                    class="bg-lime-700 rounded text-white font-bold h-10 md:h-12 px-4 text-base md:text-lg transition duration-300 font-lora hover:bg-lime-800 hover:scale-105 transform">
+                    Faire un don
+                </button></a>
+        </nav>
+    </header>
+
+
+
+    <div class="relative w-full h-[65vh] md:h-[800px] overflow-hidden">
+
+        <img class="w-full h-full inset-0 object-cover animate-slow-zoom" src="src/assets/images/IMG_IPS_22.jpeg"
+            alt="Enseignante lisant avec des élèves" />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60  to-black/50"></div>
+
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-black/50 p-12 text-center max-w-6xl rounded-md mt-10">
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl font-lora font-semibold text-white mb-6 leading-none opacity-0 animate-fadeUp">
+                    Favoriser l'éducation pour un avenir meilleur
+                </h1>
+
+                <p class="text-base sm:text-xl md:text-2xl text-white opacity-0 animate-fadeUp-delay">
+                    En aidant un enfant à apprendre aujourd’hui, vous construisez le monde de demain.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+                <div class="order-2 lg:order-1">
+
+                    <h2 class="text-4xl md:text-5xl font-Montserrat font-semibold text-blackmb-6">
+                        Qui sommes-nous ?
+                        <br><br>
+                    </h2>
+
+                    <p class="text-base text-black leading-relaxed mb-8">
+                        <span class="text-[#4B9B00] font-bold">L’Institut pour le Progrès Social (IPS)</span> est une
+                        association
+                        citoyenne engagée dans
+                        développement communautaire, avec une attention particulière portée à l’éducation et à la
+                        jeunesse. Né de la volonté de structurer des initiatives locales, l’IPS a mené des actions
+                        concrètes comme la publication d’ouvrages éducatifs et la dotation de matériels sportifs aux
+                        écoles et universités, renforçant ainsi son ancrage dans la promotion de l’épanouissement des
+                        jeunes. <br>
+
+                        Au fil des années, l’IPS a élargi son champ d’action pour répondre à des enjeux plus globaux
+                        tels que l’équité, l’inclusion et la cohésion sociale. En réunissant parents, enseignants,
+                        autorités locales et forces de sécurité, l’Institut a mis en place une démarche participative et
+                        structurée. Son ambition : placer la jeunesse au centre d’un progrès social durable, en
+                        construisant des solutions adaptées et en mobilisant l’ensemble des acteurs de la communauté.
+                        <br><br>
+
+                    </p>
+
+                    <a href="A-propos.html" class="inline-block py-3 px-8 text-lg font-semibold font-lora rounded-lg 
+                                  bg-[#4B9B00]  text-white 
+                                  hover:bg-lime-600 transition duration-300 shadow-md">
+                        En savoir plus
+                    </a>
+                </div>
+
+                <div class="order-1 lg:order-2 h-64 sm:h-96 md:h-[500px] w-full rounded-xl overflow-hidden shadow-2xl">
+                    <img class="w-full h-full object-cover" src="src/assets/images/IMG_IPS_16.jpeg"
+                        alt="Deux enfants souriants" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="relative py-16 md:py-24 bg-cover bg-center"
+        style="background-image: url('src/assets/images/IMG_IPS_13.jpeg');">
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <h2 class="text-3xl md:text-4xl font-lora font-semibold text-white mb-12 max-w-4xl mx-auto leading-snug">
+                Ensemble, nous avons impulsé <span class="text-[#FFA500]">200</span> Transformations dans les
+                Communautés.
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div
+                    class="bg-white/10 p-6 rounded-xl shadow-2xl backdrop-blur-sm transition duration-300 hover:bg-black/70">
+                    <div class="text-4xl mb-4 mx-auto w-fit text-amber-500">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.207 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.793 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.793 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.207 18 16.5 18s-3.332.477-4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.5 5s-2.028-1-3.5-1-3.5 1-3.5 1v13.747C13.168 18.477 14.793 18 16.5 18s3.332.477 4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-semibold font-lora text-white mb-4">Action Éducative</h3>
+                    <div class="w-1/3 h-1 bg-lime-500 mx-auto mb-2"></div>
+                    <p class="text-3xl font-bold text-amber-500">1253 +</p>
+                </div>
+
+                <div
+                    class="bg-white/10 p-6 rounded-xl shadow-2xl backdrop-blur-sm transition duration-300 hover:bg-black/70">
+                    <div class="text-4xl mb-4 mx-auto w-fit text-amber-500">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.207 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.793 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.793 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.207 18 16.5 18s-3.332.477-4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.5 5s-2.028-1-3.5-1-3.5 1-3.5 1v13.747C13.168 18.477 14.793 18 16.5 18s3.332.477 4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-lora text-white mb-4">Action Éducative</h3>
+                    <div class="w-1/3 h-1 bg-lime-500 mx-auto mb-2"></div>
+                    <p class="text-3xl font-bold text-amber-500">2845 +</p>
+                </div>
+
+                <div
+                    class="bg-white/10 p-6 rounded-xl shadow-2xl backdrop-blur-sm transition duration-300 hover:bg-black/70">
+                    <div class="text-4xl mb-4 mx-auto w-fit text-amber-500">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.207 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.793 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.793 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.207 18 16.5 18s-3.332.477-4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.5 5s-2.028-1-3.5-1-3.5 1-3.5 1v13.747C13.168 18.477 14.793 18 16.5 18s3.332.477 4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-lora text-white mb-4">Action Éducative</h3>
+                    <div class="w-1/3 h-1 bg-lime-500 mx-auto mb-2"></div>
+                    <p class="text-3xl font-bold text-amber-500">3587 +</p>
+                </div>
+
+                <div
+                    class="bg-white/10 p-6 rounded-xl shadow-2xl backdrop-blur-sm transition duration-300 hover:bg-black/70">
+                    <div class="text-4xl mb-4 mx-auto w-fit text-amber-500">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.207 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.793 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.793 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.207 18 16.5 18s-3.332.477-4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.5 5s-2.028-1-3.5-1-3.5 1-3.5 1v13.747C13.168 18.477 14.793 18 16.5 18s3.332.477 4.5 1.247V6.253M12 6.253v13">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-lora text-white mb-4">Action Éducative</h3>
+                    <div class="w-1/3 h-1 bg-lime-500 mx-auto mb-2"></div>
+                    <p class="text-3xl font-bold text-amber-500">1253 +</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <h2 class="text-4xl md:text-4xl font-Montsserat font-semibold text-amber-500 mb-4 
+                   opacity-0 animate-fadeUp" style="animation-delay: 0.1s; animation-fill-mode: forwards;">
+                Domaines d'intervention
+            </h2>
+
+            <p class="text-xl text-black max-w-4xl mx-auto mb-10 md:mb-12 leading-relaxed
+                  opacity-0 animate-fadeUp-delay" style="animation-delay: 0.3s; animation-fill-mode: forwards;">
+                Nous croyons fermement que chaque enfant mérite un environnement sain,
+                sécurisé et respectueux des droits de l'homme pour s'épanouir.
+                C'est pourquoi nous intervenons dans plusieurs domaines clés qui touchent directement la vie des
+                enfants.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="relative w-full h-80 rounded-lg shadow-xl overflow-hidden group 
+                        opacity-0 animate-fadeUp-delay" style="animation-delay: 0.6s; animation-fill-mode: forwards;">
+                    <img class="w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110 z-0"
+                        src="src/assets/images/IMG_IPS_25.jpeg" alt="Groupe d'enfants souriants" />
+                    <div class="absolute inset-0 bg-black/50 z-10"></div>
+                    <div class="absolute inset-0 flex flex-col justify-end p-6 text-left z-20">
+                        <h3 class="text-3xl font-bold group-hover:text-amber-500 text-white mb-1">Éducation</h3>
+                        <p class="text-base group-hover:text-amber-300 font-medium text-white/90">
+                            Droits des enfants à une éducation de qualité
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative w-full h-80 rounded-lg shadow-xl overflow-hidden group 
+                        opacity-0 animate-fadeUp-delay" style="animation-delay: 0.8s; animation-fill-mode: forwards;">
+                    <img class="w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110 z-0"
+                        src="src/assets/images/IMG_IPS_29.jpeg" alt="Enfants au soin médical" />
+                    <div class="absolute inset-0 bg-black/50 z-10"></div>
+                    <div class="absolute inset-0 flex flex-col justify-end p-6 text-left z-20">
+                        <h3 class="text-3xl font-bold group-hover:text-amber-500 text-white mb-1">Santé</h3>
+                        <p class="text-base font-medium group-hover:text-amber-300 text-white/90">
+                            Accès aux soins et bien-être des enfants
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative w-full h-80 rounded-lg shadow-xl overflow-hidden group 
+                        opacity-0 animate-fadeUp-delay" style="animation-delay: 1.0s; animation-fill-mode: forwards;">
+                    <img class="w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110 z-0"
+                        src="src/assets/images/IMG_IPS_30.jpeg" alt="Enfants jouant" />
+                    <div class="absolute inset-0 bg-black/50 z-10"></div>
+                    <div class="absolute inset-0 flex flex-col justify-end p-6 text-left z-20">
+                        <h3 class="text-3xl font-bold group-hover:text-amber-500 text-white mb-1">Protection</h3>
+                        <p class="text-base group-hover:text-amber-300 font-medium text-white/90">
+                            Lutte contre les abus et la maltraitance
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto">
+        <section class="flex flex-col md:flex-row w-full min-h-[400px]">
+
+
+            <div class="relative w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-cover bg-center"
+                style="background-image: url('src/assets/images/IMG_IPS_26.jpeg');">
+
+                <div class="absolute inset-0 bg-black opacity-70"></div>
+
+                <h2
+                    class="relative text-4xl md:text-6xl font-semibold font-Montserrat text-white mb-6 leading-tight z-10">
+                    Zone <br> d'intervention
+                </h2>
+
+                <p class="relative text-lg text-white mb-8 max-w-md z-10">
+                    La zone d'intervention de l'IPS couvre les
+                    communautés frontalières entre le Bénin et le Nigéria
+                    , ciblant les arrondissements d'Ahoyéyé (Pobè)et d'Idigny (Kétou)
+                    . Nos actions visent à déconstruire les stéréotypes et à soutenir
+                    l'épanouissement des populations locales.
+                </p>
+
+                <button class="relative hover:bg-amber-600 text-white font-bold py-4 px-10 shadow-lg 
+           bg-amber-500 transition duration-300 w-fit 
+           transform hover:scale-105 z-10">
+                    Découvrir
+                </button>
+            </div>
+            <div class="w-full md:w-1/2 min-h-[300px] md:min-h-[400px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1013553.
+                5315642162!2d1.941772426415608!3d7.103561653232715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x103ad74887b3e3b5%3A0x4ce7cdd9d1b47302!
+                2sPlateau!5e0!3m2!1sfr!2sbj!4v1759315841922!5m2!1sfr!2sbj" width="100%" height="100%" frameborder="0"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-full"></iframe>
+            </div>
+
+        </section>
+    </div>
+    </section>
+
+
+    <section class="py-12 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 md:mb-16">
+
+            <h2 class="text-4xl md:text-5xl font-montserat font-semibold text-black opacity-0 animate-fadeUp"
+                style="animation-delay: 0.1s; animation-fill-mode: forwards;">
+                Nos Actualités
+            </h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-200 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl group 
+                        opacity-0 animate-fadeUp-delay" style="animation-delay: 0.4s; animation-fill-mode: forwards;">
+                    <div class="h-60 overflow-hidden">
+                        <img class="w-full h-full object-cover transition duration-500 ease-in-out transform scale-100 group-hover:scale-110"
+                            src="src/assets/images/IMG_IPS_20.jpeg" alt="Enfant en train d'écrire" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-3 leading-snug">
+                            Le livret d'éducation morale et civique : un outil pour l'avenir des jeunes
+                        </h3>
+                        <p class="text-black mb-4 text-sm">
+                            Pour faire face aux défis de l'éducation, l'IPS a publié un livret pédagogique innovant. Ce
+                            nouvel outil
+                            aide les jeunes à développer les valeurs civiques essentielles et à construire l'...
+                        </p>
+                        <a href="detail-actualités.html" class="text-[#4B9B00] font-semibold text-sm group-hover:text-amber-500 
+                            transition duration-150 block mb-3">
+                            Lire la suite .....
+                        </a>
+                        <p class="text-xs text-black mt-2">
+                            Publié le 20 Août 2024
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl group
+                        opacity-0 animate-fadeUp-delay" style="animation-delay: 0.6s; animation-fill-mode: forwards;">
+                    <div class="h-60 overflow-hidden">
+                        <img class="w-full h-full object-cover transition duration-500 ease-in-out transform scale-100 group-hover:scale-110"
+                            src="src/assets/images/IMG_IPS_20.jpeg" alt="Enfant en train d'écrire" />
+                    </div>
+
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-3 leading-snug">
+                            Le livret d'éducation morale et civique : un outil pour l'avenir des jeunes
+                        </h3>
+                        <p class="text-black mb-4 text-sm">
+                            Pour faire face aux défis de l'éducation, l'IPS a publié un livret pédagogique innovant. Ce
+                            nouvel outil
+                            aide les jeunes à développer les valeurs civiques essentielles et à construire l'...
+                        </p>
+                        <a href="detail-actualités.html"
+                            class="text-[#4B9B00] font-semibold text-sm group-hover:text-amber-500 transition duration-150 block mb-3">
+                            Lire la suite .....
+                        </a>
+                        <p class="text-xs text-black mt-2">Publié le 20 Août 2024</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl group
+                        opacity-0 animate-fadeUp-delay" style="animation-delay: 0.8s; animation-fill-mode: forwards;">
+                    <div class="h-60 overflow-hidden">
+                        <img class="w-full h-full object-cover transition duration-500 ease-in-out transform scale-100 group-hover:scale-110"
+                            src="src/assets/images/IMG_IPS_20.jpeg" alt="Enfant en train d'écrire" />
+                    </div>
+
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-3 leading-snug">
+                            Le livret d'éducation morale et civique : un outil pour l'avenir des jeunes
+                        </h3>
+                        <p class="text-black mb-4 text-sm">
+                            Pour faire face aux défis de l'éducation, l'IPS a publié un livret pédagogique innovant.
+                            Ce nouvel outil aide les jeunes à développer les valeurs civiques essentielles et à
+                            construire l'...
+                        </p>
+                        <a href="detail-actualités.html" class="text-[#4B9B00] font-semibold text-sm group-hover:text-amber-500
+                             transition duration-150 block mb-3">
+                            Lire la suite .....
+                        </a>
+                        <p class="text-xs text-black mt-2">Publié le 20 Août 2024</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <h2 class="text-3xl md:text-5xl font-Montserrat font-semibold text-black mb-12 max-w-4xl mx-auto leading-snug 
+                   opacity-0 animate-fadeUp" style="animation-delay: 0.1s; animation-fill-mode: forwards;">
+                Ensemble, nous avons impulsé <span class="text-lime-500">200</span> Transformations dans les
+                Communautés.
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border text-black text-left 
+                        opacity-0 animate-fadeUp-delay 
+                        group transition duration-300 ease-in-out hover:scale-105 hover:bg-amber-500 hover:shadow-2xl"
+                    style="animation-delay: 0.4s; animation-fill-mode: forwards;">
+                    <h3 class="text-xl font-bold text-black mb-4 group-hover:text-white transition duration-300">
+                        Favoriser le changement
+                    </h3>
+                    <p class="text-base text-black italic mb-6 group-hover:text-white transition duration-300">
+                        Leurs collaborations créent un impact durable et changent des vies, donnant du pouvoir aux
+                        communautés.
+                        Leurs collaborations créent un impact durable et changent des vies, donnant du pouvoir aux
+                        communautés.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <img class="h-10 w-10 rounded-full object-cover mr-3"
+                                src="src/assets/images/user-avatar.jpg" alt="Avatar David Lee" />
+                            <div>
+                                <p class="font-semibold text-black group-hover:text-white transition duration-300">
+                                    David Lee</p>
+                                <p class="text-sm text-black group-hover:text-white transition duration-300">
+                                    Écologiste</p>
+                            </div>
+                        </div>
+                        <div class="text-5xl text-black font-serif group-hover:text-white transition duration-300">”
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border text-black text-left 
+                        opacity-0 animate-fadeUp-delay 
+                        group transition duration-300 ease-in-out hover:scale-105 hover:bg-amber-500 hover:shadow-2xl"
+                    style="animation-delay: 0.4s; animation-fill-mode: forwards;">
+                    <h3 class="text-xl font-bold text-black mb-4 group-hover:text-white transition duration-300">
+                        Favoriser le changement
+                    </h3>
+                    <p class="text-base text-black italic mb-6 group-hover:text-white transition duration-300">
+                        Leurs collaborations créent un impact durable et changent des vies, donnant du pouvoir aux
+                        communautés.
+                        Leurs collaborations créent un impact durable et changent des vies, donnant du pouvoir aux
+                        communautés.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <img class="h-10 w-10 rounded-full object-cover mr-3"
+                                src="src/assets/images/user-avatar.jpg" alt="Avatar David Lee" />
+                            <div>
+                                <p class="font-semibold text-black group-hover:text-white transition duration-300">
+                                    David Lee</p>
+                                <p class="text-sm text-black group-hover:text-white transition duration-300">
+                                    Écologiste</p>
+                            </div>
+                        </div>
+                        <div class="text-5xl text-black font-serif group-hover:text-white transition duration-300">”
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border text-black text-left 
+                        opacity-0 animate-fadeUp-delay 
+                        group transition duration-300 ease-in-out hover:scale-105 hover:bg-amber-500 hover:shadow-2xl"
+                    style="animation-delay: 0.4s; animation-fill-mode: forwards;">
+                    <h3 class="text-xl font-bold text-black mb-4 group-hover:text-white transition duration-300">
+                        Favoriser le changement
+                    </h3>
+                    <p class="text-base text-black italic mb-6 group-hover:text-white transition duration-300">
+                        Leurs collaborations créent un impact durable et changent des vies, donnant du pouvoir aux
+                        communautés.
+                        Leurs collaborations créent un impact durable et changent des vies, donnant du pouvoir aux
+                        communautés.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <img class="h-10 w-10 rounded-full object-cover mr-3"
+                                src="src/assets/images/user-avatar.jpg" alt="Avatar David Lee" />
+                            <div>
+                                <p class="font-semibold text-black group-hover:text-white transition duration-300">
+                                    David Lee</p>
+                                <p class="text-sm text-black group-hover:text-white transition duration-300">
+                                    Écologiste</p>
+                            </div>
+                        </div>
+                        <div class="text-5xl text-black font-serif group-hover:text-white transition duration-300">”
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-2 mt-4">
+                <span class="h-3 w-3 rounded-full bg-amber-500"></span> <span
+                    class="h-3 w-3 rounded-full bg-amber-200"></span>
+                <span class="h-3 w-3 rounded-full bg-amber-200"></span>
+                <span class="h-3 w-3 rounded-full bg-amber-200"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="relative h-[60vh] md:h-[90vh] bg-cover bg-center flex items-center justify-center mb-20"
+        style="background-image: url('src/assets/images/IMG_IPS_21.jpeg');">
+
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-4">
+
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-lora font-semibold text-white mb-10 leading-snug 
+                   opacity-0 animate-fadeUp" style="animation-delay: 0.1s; animation-fill-mode: forwards;">
+                Un progrès social durable ne peut s'accomplir sans vous. Rejoignez l'IPS dans son engagement pour
+                l'équité, l'éducation et l'autonomisation à Pobè et Ketou
+            </h2>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-25">
+
+                <a href="Don.html" class="inline-block py-3 px-8 text-xl  font-bold rounded-lg shadow-xl 
+                              bg-[#4B9B00] text-white 
+                              hover:bg-lime-700 transition duration-300 transform hover:scale-105 w-full sm:w-auto
+                              opacity-0 animate-fadeUp-delay"
+                    style="animation-delay: 0.4s; animation-fill-mode: forwards;">
+                    FAIRE UN DON
+                </a>
+
+                <a href="Bénévoles.html" class="inline-block py-3 px-8 text-xl font-bold rounded-lg shadow-xl 
+                              bg-[#4B9B00] text-white 
+                              hover:bg-lime-700 transition duration-300 transform hover:scale-105 w-full sm:w-auto
+                              opacity-0 animate-fadeUp-delay"
+                    style="animation-delay: 0.6s; animation-fill-mode: forwards;">
+                    DEVENIR BENEVOLE
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="bg-lime-100 text-black">
+        <div class="max-w-7xl bg-gray-80 mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-gray-800">
+
+                <div class="space-y-4">
+                    <img src="src/assets/images/logo.png" alt="Logo IPS" class="h-20">
+                    <p class="text-sm leading-relaxed text-black">
+                        Œuvrer pour le progrès social à travers l'engagement et la solidarité.
+                    </p>
+
+                    <div class="pt-2">
+                        <p class="text-xl font-serif text-black mb-4 border-b border-black w-fit pb-1">Suivez-nous
+                            sur</p>
+
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="w-10 h-10 p-1 rounded-full border-current bg-white hover:bg-gray-100 transition duration-150"
+                                style="border-color: #4B9B00;">
+                                <svg class="w-full h-full" fill="none" stroke="#4B9B00" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="w-10 h-10 rounded-full border-current bg-white hover:bg-gray-100 transition duration-150 text-[#4B9B00] 
+                            flex items-center justify-center" style="border-color: #4B9B00;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6">
+                                    <path fill="currentColor"
+                                        d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="w-10 h-10 rounded-full border-current bg-white hover:bg-gray-100 transition duration-150 text-[#4B9B00] 
+                            flex items-center justify-center" style="border-color: #4B9B00;">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold uppercase mb-4 text-black border-b border-black w-fit pb-1">Liens utiles
+                    </h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html"
+                                class="text-black hover:text-[#4B9B00] transition duration-150">Accueil</a>
+                        </li>
+                        <li><a href="A-propos.html" class="text-black hover:text-[#4B9B00] transition duration-150">À
+                                propos</a>
+                        </li>
+                        <li><a href="Nos-projets.html"
+                                class="text-black hover:text-[#4B9B00] transition duration-150">Nos
+                                projets</a></li>
+                        <li><a href="Blog.html" class="text-black hover:text-[#4B9B00] transition duration-150">Blog</a>
+                        </li>
+                        <li><a href="Contact.html"
+                                class="text-black hover:text-[#4B9B00] transition duration-150">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold uppercase mb-4 text-black border-b border-black w-fit pb-1">Coordonnées
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-black mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <p class="text-black hover:text-[#4B9B00]">Cotonou, Quartier Fifatin, derrière la Maison du
+                                Peuple d’Akpakpa
+                            </p>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <div class="text-black hover:text-[#4B9B00]">
+                                <p>(+229) 01 97 57 1703</p>
+                                <p>(+229) 01 97 68 1885</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <p class="text-black hover:text-[#4B9B00]">sprogresswatch@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold uppercase mb-4 text-black border-b border-black w-fit pb-1">Newsletter
+                    </h3>
+                    <p class="text-sm text-black mb-4">
+                        Abonnez-vous à notre newsletter pour suivre nos actions et projets.
+                    </p>
+                    <div class="relative flex">
+                        <input type="email" placeholder="Votre adresse"
+                            class="w-full p-3 pr-12 text-sm border text-black rounded-lg focus:ring-[#4B9B00] focus:border-[#4B9B00]" />
+                        <button type="submit"
+                            class="absolute right-0 top-0 h-full px-3 text-white bg-[#4B9B00] rounded-r-lg hover:bg-green-700 transition duration-150">
+                            <svg class="w-5 h-5 transform rotate-45" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="py-4 text-xs bg-lime-100 border-[#4B9B00] border-t text-black flex flex-col md:flex-row justify-center items-center space-y-1 md:space-y-0 md:space-x-4">
+            <span>© 2025 Institut pour le Progrès Social - Tous droits réservés.</span>
+            <span class="hidden md:inline">|</span>
+            <span class="flex space-x-2">
+                <a href="Mentions-légales.html" class="hover:text-[#4B9B00] transition duration-150">Mentions
+                    légales</a>
+                <span class="">|</span>
+                <a href="Politique-de-confidentialité.html"
+                    class="hover:text-[#4B9B00] transition duration-150">Politique de confidentialité</a>
+            </span>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // ========================= MENU MOBILE =========================
+            const menuBtn = document.getElementById('menuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            menuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+            });
+
+            // ========================= PAGINATION & FILTERING =========================
+            const projectsContainer = document.getElementById('projects-container');
+            const projectCards = projectsContainer.querySelectorAll('.project-card');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const pageNumbersContainer = document.getElementById('pageNumbers');
+
+            const itemsPerPage = 6;
+            let currentPage = 1;
+            let currentFilter = 'all';
+
+            // Fonction pour mettre à jour l'affichage des cartes et de la pagination
+            function updateDisplay() {
+                let filteredCards = Array.from(projectCards).filter(card => {
+                    const category = card.getAttribute('data-category');
+                    const page = parseInt(card.getAttribute('data-page'));
+
+                    // Check filter: 'all' or category matches
+                    const filterMatch = currentFilter === 'all' || category === currentFilter;
+
+                    // Check pagination: only show the current page
+                    const pageMatch = page === currentPage;
+
+                    // Hide/Show based on filter match and pagination match
+                    if (filterMatch && pageMatch) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+
+                    // Return filterMatch to calculate total pages correctly
+                    return filterMatch;
+                });
+
+                // Recalculer le total des pages en utilisant UNIQUEMENT les cartes filtrées
+                const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+
+                // Gérer l'état des boutons Précédent/Suivant
+                prevButton.disabled = currentPage === 1;
+                nextButton.disabled = currentPage >= totalPages;
+
+
+                // Mettre à jour les numéros de page
+                pageNumbersContainer.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageButton = document.createElement('button');
+                    pageButton.textContent = i;
+                    pageButton.classList.add('px-3', 'py-1', 'rounded', 'font-semibold', 'transition', 'duration-150');
+
+                    if (i === currentPage) {
+                        pageButton.classList.add('bg-amber-500', 'text-white');
+                        pageButton.classList.remove('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                    } else {
+                        pageButton.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                        pageButton.addEventListener('click', function () {
+                            currentPage = i;
+                            updateDisplay();
+                            document.getElementById('projects-container').scrollIntoView({ behavior: 'smooth' });
+                        });
+                    }
+                    pageNumbersContainer.appendChild(pageButton);
+                }
+
+                // S'assurer que currentPage ne dépasse pas totalPages après un changement de filtre
+                if (currentPage > totalPages && totalPages > 0) {
+                    currentPage = totalPages;
+                    updateDisplay();
+                } else if (totalPages === 0) {
+                    // Optionnel: Afficher un message si aucun résultat n'est trouvé
+                }
+            }
+
+
+            // ========================= FILTRAGE =========================
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Désactiver l'ancien bouton actif
+                    const activeBtn = document.querySelector('.filter-btn.active');
+                    if (activeBtn) {
+                        activeBtn.classList.remove('active', 'bg-[#4B9B00]', 'text-white');
+                        activeBtn.classList.add('bg-gray-100', 'text-gray-700');
+                    }
+
+                    // Activer le nouveau bouton
+                    this.classList.add('active', 'bg-[#4B9B00]', 'text-white');
+                    this.classList.remove('bg-gray-100', 'text-gray-700');
+
+                    currentFilter = this.getAttribute('data-filter');
+                    currentPage = 1; // Toujours revenir à la page 1 après un filtre
+                    updateDisplay();
+                    document.getElementById('projects-container').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Clic sur Précédent
+            prevButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (currentPage > 1) {
+                    currentPage--;
+                    updateDisplay();
+                    document.getElementById('projects-container').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+
+            // Clic sur Suivant
+            nextButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Recalculer le total des pages en fonction du filtre actuel
+                const totalPages = Math.ceil(
+                    Array.from(projectCards).filter(card => {
+                        const category = card.getAttribute('data-category');
+                        return currentFilter === 'all' || category === currentFilter;
+                    }).length / itemsPerPage
+                );
+
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updateDisplay();
+                    document.getElementById('projects-container').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+
+            // ========================= INITIALISATION =========================
+
+            // Afficher la configuration initiale (tous les projets, page 1)
+            updateDisplay();
+        });
+
+        // --- Blur Header au scroll ---
+        function toggleHeaderBlur() {
+            const header = document.getElementById('blurHeader');
+            const scrollThreshold = 50;
+            const blurClasses = ['bg-white/10', 'backdrop-blur-md', 'border-white'];
+            const defaultClasses = ['bg-gray-50', 'border-b', 'border-gray-200'];
+
+            if (window.scrollY > scrollThreshold) {
+                defaultClasses.forEach(cls => header.classList.remove(cls));
+                blurClasses.forEach(cls => header.classList.add(cls));
+            } else {
+                blurClasses.forEach(cls => header.classList.remove(cls));
+                defaultClasses.forEach(cls => header.classList.add(cls));
+            }
+        }
+
+        window.addEventListener('scroll', toggleHeaderBlur);
+        toggleHeaderBlur();
+    </script>
+</body>
+
+</html>
